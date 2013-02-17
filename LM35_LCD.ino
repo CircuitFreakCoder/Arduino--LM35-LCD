@@ -18,7 +18,7 @@ void setup() {
   lcd.begin(16, 2);
   // Print a message to the LCD.
   lcd.print("Temperature: ");
-  //setup LM35 sensor in as input
+  //setup LM35 sensor pin as input
   pinMode(LM35_Pin, INPUT); 
 }
 
