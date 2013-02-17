@@ -1,4 +1,3 @@
-
 // include the LCD library 
 #include <LiquidCrystal.h>
 
@@ -30,5 +29,6 @@ void loop() {
   temperatureReading = (analogReading * 500) /1024;
   // set the cursor to column 0, line 1
   lcd.setCursor(0, 1);
+  //convert the reading to string, add C for Celsius and display it on the LCD
   lcd.print(String(temperatureReading) + " C");
 }
